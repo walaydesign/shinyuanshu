@@ -35,6 +35,60 @@ var swiperGarden = new Swiper(".garden_swiper", {
   },
 });
 
+var swiperArrange = new Swiper(".arrange_swiper", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: "#arrange-next",
+    prevEl: "#arrange-prev",
+  },
+  speed: 800,
+  pagination: {
+    el: "#arrange-pagination",
+    clickable: true,
+  },
+  effect: "fade",
+  allowTouchMove: false,
+  fadeEffect: {
+    crossFade: true,
+  },
+});
+
+var swiperArrangeInfo = new Swiper(".arrange_info_swiper", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: "#arrange-next",
+    prevEl: "#arrange-prev",
+  },
+  speed: 800,
+  pagination: {
+    el: "#arrange-pagination",
+    clickable: true,
+  },
+  effect: "fade",
+  allowTouchMove: false,
+  fadeEffect: {
+    crossFade: true,
+  },
+});
+
+function sendEmail() {
+  Email.send({
+    SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
+    To: "zhulixdesign@gmail.com, zhuli705098@gmail.com, a3202443aa@yahoo.com.tw, dtweryd@gmail.com",
+    From: "walayydesign@gmail.com",
+    Subject: "航綻甜心預約賞屋",
+    Body:
+      "姓名:" +
+      document.getElementById("name").value +
+      "<br>電話:" +
+      document.getElementById("phone").value +
+      "<br>需求房型:" +
+      document.getElementById("type").value +
+      "<br>聯繫內容:" +
+      document.getElementById("content").value,
+  }).then((message) => alert("感謝您的來信！我們很快就會和您聯繫！"));
+}
+
 
 
 
@@ -105,41 +159,7 @@ $("#swiper-tab-2 .swiper-tab_btns_item").click(function () {
   swiperTab2.slideTo(li_index, 1000, true);
 });
 
-var swiperArrange = new Swiper(".arrange_swiper", {
-  slidesPerView: 1,
-  navigation: {
-    nextEl: "#arrange-next",
-    prevEl: "#arrange-prev",
-  },
-  speed: 800,
-  pagination: {
-    el: "#arrange-pagination",
-    clickable: true,
-  },
-  effect: "fade",
-  allowTouchMove: false,
-  fadeEffect: {
-    crossFade: true,
-  },
-});
 
-function sendEmail() {
-  Email.send({
-    SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
-    To: "zhulixdesign@gmail.com, zhuli705098@gmail.com, a3202443aa@yahoo.com.tw, dtweryd@gmail.com",
-    From: "walayydesign@gmail.com",
-    Subject: "航綻甜心預約賞屋",
-    Body:
-      "姓名:" +
-      document.getElementById("name").value +
-      "<br>電話:" +
-      document.getElementById("phone").value +
-      "<br>需求房型:" +
-      document.getElementById("type").value +
-      "<br>聯繫內容:" +
-      document.getElementById("content").value,
-  }).then((message) => alert("感謝您的來信！我們很快就會和您聯繫！"));
-}
 
 $(window).on("resize", function () {
   mapResize();
