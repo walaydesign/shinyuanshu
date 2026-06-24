@@ -89,78 +89,6 @@ function sendEmail() {
   }).then((message) => alert("感謝您的來信！我們很快就會和您聯繫！"));
 }
 
-
-
-
-// 還沒用到的
-var swiperTab1 = new Swiper(".swiper-tab-1", {
-  slidesPerView: 1,
-  navigation: {
-    nextEl: "#swiper-tab-1-next",
-    prevEl: "#swiper-tab-1-prev",
-  },
-  speed: 800,
-  pagination: {
-    el: "#swiper-tab-1-pagination",
-    clickable: true,
-  },
-  allowTouchMove: false,
-  on: {
-    slideChangeTransitionEnd: function () {
-      let index = $(".swiper-tab-1 .swiper-slide-active").index();
-      $("#swiper-tab-1 .swiper-tab_btns_item")
-        .eq(index)
-        .addClass("active")
-        .siblings(".swiper-tab_btns_item")
-        .removeClass("active");
-    },
-  },
-});
-
-$("#swiper-tab-1 .swiper-tab_btns_item").click(function () {
-  $(this)
-    .addClass("active")
-    .siblings(".swiper-tab_btns_item")
-    .removeClass("active");
-  let li_index = $(this).index();
-  swiperTab1.slideTo(li_index, 1000, true);
-});
-
-var swiperTab2 = new Swiper(".swiper-tab-2", {
-  slidesPerView: 1,
-  navigation: {
-    nextEl: "#swiper-tab-2-next",
-    prevEl: "#swiper-tab-2-prev",
-  },
-  speed: 800,
-  pagination: {
-    el: "#swiper-tab-2-pagination",
-    clickable: true,
-  },
-  allowTouchMove: false,
-  on: {
-    slideChangeTransitionEnd: function () {
-      let index = $(".swiper-tab-2 .swiper-slide-active").index();
-      $("#swiper-tab-2 .swiper-tab_btns_item")
-        .eq(index)
-        .addClass("active")
-        .siblings(".swiper-tab_btns_item")
-        .removeClass("active");
-    },
-  },
-});
-
-$("#swiper-tab-2 .swiper-tab_btns_item").click(function () {
-  $(this)
-    .addClass("active")
-    .siblings(".swiper-tab_btns_item")
-    .removeClass("active");
-  let li_index = $(this).index();
-  swiperTab2.slideTo(li_index, 1000, true);
-});
-
-
-
 $(window).on("resize", function () {
   mapResize();
 });
@@ -173,3 +101,14 @@ function mapResize() {
     $(".map_pic").animate({ scrollLeft: mapX });
   }
 }
+
+$(".arrange-floor").click(function () {
+  let img = $(this).find("img").attr("src");
+  let floor = $(this).find("p").text();
+  $(".arrange-popup_main").find("img").attr("src", img);
+  $(".arrange-popup_main").find("p").text(floor);
+});
+
+
+
+
