@@ -1179,18 +1179,25 @@ main {
       }
       li {
         padding: 48px 0;
+        position: static;
         &:first-child {
           padding-top: 0;
-        }
-        &:last-child {
-          padding-bottom: 0;
         }
         &::after {
           top: inherit;
           left: 50%;
           bottom: 0;
           right: inherit;
-          transform: translate(-50%, 50%);
+          margin: 0 auto;
+          transform: none;
+          position: static;
+          display: block;
+        }
+        &:last-child {
+          padding-bottom: 0;
+          &::after {
+            display: none;
+          }
         }
       }
     }

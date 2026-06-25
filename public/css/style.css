@@ -1349,14 +1349,11 @@ main {
 
 .upgrade_text .title-ch li {
   padding: 48px 0;
+  position: static;
 }
 
 .upgrade_text .title-ch li:first-child {
   padding-top: 0;
-}
-
-.upgrade_text .title-ch li:last-child {
-  padding-bottom: 0;
 }
 
 .upgrade_text .title-ch li::after {
@@ -1364,8 +1361,19 @@ main {
   left: 50%;
   bottom: 0;
   right: inherit;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  margin: 0 auto;
+  -webkit-transform: none;
+          transform: none;
+  position: static;
+  display: block;
+}
+
+.upgrade_text .title-ch li:last-child {
+  padding-bottom: 0;
+}
+
+.upgrade_text .title-ch li:last-child::after {
+  display: none;
 }
 
 .upgrade_text_subtitle {
