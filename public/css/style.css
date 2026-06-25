@@ -1473,7 +1473,7 @@ main {
   .upgrade_text .title-ch h2 {
     font-size: 26px;
     letter-spacing: 0.37em;
-    line-height: 1;
+    line-height: 26px;
     width: auto;
     height: auto;
   }
