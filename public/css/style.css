@@ -1444,13 +1444,14 @@ main {
 }
 
 .upgrade_text_subtitle li {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   font-size: 32px;
   font-weight: 700;
   color: #003e2c;
   font-family: "Noto Serif TC", sans-serif;
+  text-orientation: upright;
 }
 
 @media screen and (max-width: 991px) {

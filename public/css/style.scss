@@ -1249,11 +1249,12 @@ main {
         }
       }
       li {
-        writing-mode: vertical-lr;
+        writing-mode: vertical-rl;
         font-size: 32px;
         font-weight: 700;
         color: $primary-500;
         font-family: $font-serif;
+        text-orientation: upright;
       }
     }
   }
