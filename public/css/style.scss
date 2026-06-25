@@ -1164,7 +1164,6 @@ main {
     position: absolute;
     padding: 48px 44px;
     background-color: rgba(255, 255, 255, 0.7);
-    // display: flex;
     gap: 20px;
     top: 6.05vw;
     left: 20.84vw;
@@ -1223,7 +1222,6 @@ main {
         }
         > ul {
           display: flex;
-          // flex-direction: column;
           > li {
             padding: 24px 0;
             position: relative;
@@ -1251,7 +1249,6 @@ main {
         }
       }
       li {
-        writing-mode: vertical-rl;
         font-size: 32px;
         font-weight: 700;
         color: $primary-500;
@@ -1270,7 +1267,7 @@ main {
         h2 {
           font-size: 26px;
           letter-spacing: 0.37em;
-        line-height: 1;
+          line-height: 1;
         }
         li {
           padding: 12px 0 0;
@@ -1286,7 +1283,8 @@ main {
           > ul {
             > li {
               padding: 8px 0;
-        line-height: 1;
+              line-height: 1;
+        writing-mode: vertical-rl;
               &::after {
                 width: 3px;
                 height: 3px;
@@ -2618,13 +2616,13 @@ main {
     }
   }
   @media screen and (max-width: 991px) {
-  .decoration {
-    &-27 {
-      width: 32.82vw;
-      top: 108.06vw;
-      right: -24.44vw;
+    .decoration {
+      &-27 {
+        width: 32.82vw;
+        top: 108.06vw;
+        right: -24.44vw;
+      }
     }
-  }
   }
 }
 

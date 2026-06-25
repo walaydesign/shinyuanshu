@@ -1445,9 +1445,6 @@ main {
 }
 
 .upgrade_text_subtitle li {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
   font-size: 32px;
   font-weight: 700;
   color: #003e2c;
@@ -1480,6 +1477,9 @@ main {
   .upgrade_text_subtitle > li > ul > li {
     padding: 8px 0;
     line-height: 1;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
   }
   .upgrade_text_subtitle > li > ul > li::after {
     width: 3px;
