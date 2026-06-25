@@ -584,7 +584,7 @@ main {
         padding: 0;
         position: relative;
         h2 {
-          font-size: 52px;
+          font-size: 54px;
           .bigger {
             font-size: 74px;
           }
@@ -611,18 +611,18 @@ main {
       }
       li {
         h3 {
-          font-size: 29px;
+          font-size: 32px;
           .highlight {
             font-size: 32px;
             span {
               transform: translate(1px, -1px);
             }
             &-smaller {
-              font-size: 21px;
+              font-size: 23px;
             }
           }
           .smaller {
-            font-size: 16px;
+            font-size: 18px;
           }
         }
         &::after {
@@ -1164,12 +1164,13 @@ main {
     position: absolute;
     padding: 48px 44px;
     background-color: rgba(255, 255, 255, 0.7);
-    display: flex;
+    // display: flex;
     gap: 20px;
     top: 6.05vw;
     left: 20.84vw;
     .title-ch {
       flex-direction: column;
+      display: inline-flex;
       .highlight {
         color: $third-500;
       }
@@ -1195,8 +1196,9 @@ main {
       }
     }
     &_subtitle {
-      display: flex;
+      display: inline-flex;
       flex-direction: column;
+      padding-left: 8px;
       > li {
         padding: 16px 0;
         position: relative;
@@ -1727,6 +1729,7 @@ main {
   }
   &_main {
     width: 100%;
+    padding: 40px 20px;
     > img {
       width: 100%;
       display: block;
@@ -2312,12 +2315,12 @@ main {
         width: 69.95vw;
         top: inherit;
         left: inherit;
-        bottom: -19.44vw;
+        bottom: 0;
         right: -20.28vw;
       }
       &-28 {
         width: 32.63vw;
-        bottom: -16.39vw;
+        bottom: 7vw;
         left: -13.89vw;
       }
     }
