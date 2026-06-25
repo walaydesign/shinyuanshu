@@ -1270,8 +1270,10 @@ main {
       gap: 5px;
       top: 9.17vw;
       left: 14.72vw;
+      display: flex;
+      background-color: transparent;
       .title-ch {
-        display: inline-block;
+        // display: inline-block;
         h2 {
           font-size: 26px;
           letter-spacing: 0.37em;
@@ -1284,7 +1286,7 @@ main {
         }
       }
       &_subtitle {
-        display: inline-block;
+        // display: inline-block;
         > li {
           padding: 8px 0;
           &::after {
