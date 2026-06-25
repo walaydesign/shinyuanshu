@@ -1267,6 +1267,7 @@ main {
         h2 {
           font-size: 26px;
           letter-spacing: 0.37em;
+        line-height: 1;
         }
         li {
           padding: 12px 0 0;
@@ -1282,6 +1283,7 @@ main {
           > ul {
             > li {
               padding: 8px 0;
+        line-height: 1;
               &::after {
                 width: 3px;
                 height: 3px;

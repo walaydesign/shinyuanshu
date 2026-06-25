@@ -1463,6 +1463,7 @@ main {
   .upgrade_text .title-ch h2 {
     font-size: 26px;
     letter-spacing: 0.37em;
+    line-height: 1;
   }
   .upgrade_text .title-ch li {
     padding: 12px 0 0;
@@ -1476,6 +1477,7 @@ main {
   }
   .upgrade_text_subtitle > li > ul > li {
     padding: 8px 0;
+    line-height: 1;
   }
   .upgrade_text_subtitle > li > ul > li::after {
     width: 3px;
