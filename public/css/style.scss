@@ -1264,6 +1264,7 @@ main {
       top: 9.17vw;
       left: 14.72vw;
       .title-ch {
+        display: inline-block;
         h2 {
           font-size: 26px;
           letter-spacing: 0.37em;
@@ -1274,6 +1275,7 @@ main {
         }
       }
       &_subtitle {
+        display: inline-block;
         > li {
           padding: 8px 0;
           &::after {
@@ -1281,6 +1283,7 @@ main {
             height: 1px;
           }
           > ul {
+              display: block;
             > li {
               padding: 8px 0;
               line-height: 1;

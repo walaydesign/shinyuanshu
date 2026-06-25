@@ -1459,6 +1459,9 @@ main {
     top: 9.17vw;
     left: 14.72vw;
   }
+  .upgrade_text .title-ch {
+    display: inline-block;
+  }
   .upgrade_text .title-ch h2 {
     font-size: 26px;
     letter-spacing: 0.37em;
@@ -1467,12 +1470,18 @@ main {
   .upgrade_text .title-ch li {
     padding: 12px 0 0;
   }
+  .upgrade_text_subtitle {
+    display: inline-block;
+  }
   .upgrade_text_subtitle > li {
     padding: 8px 0;
   }
   .upgrade_text_subtitle > li::after {
     width: 13px;
     height: 1px;
+  }
+  .upgrade_text_subtitle > li > ul {
+    display: block;
   }
   .upgrade_text_subtitle > li > ul > li {
     padding: 8px 0;
