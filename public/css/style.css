@@ -1466,6 +1466,8 @@ main {
     font-size: 26px;
     letter-spacing: 0.37em;
     line-height: 1;
+    width: auto;
+    height: auto;
   }
   .upgrade_text .title-ch li {
     padding: 12px 0 0;
