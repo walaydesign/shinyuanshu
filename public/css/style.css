@@ -1471,6 +1471,9 @@ main {
     display: flex;
     background-color: transparent;
   }
+  .upgrade_text .title-ch {
+    width: 26px;
+  }
   .upgrade_text .title-ch h2 {
     font-size: 26px;
     letter-spacing: 0.37em;
@@ -1480,6 +1483,9 @@ main {
   }
   .upgrade_text .title-ch li {
     padding: 12px 0 0;
+  }
+  .upgrade_text_subtitle {
+    width: 23px;
   }
   .upgrade_text_subtitle > li {
     padding: 8px 0;

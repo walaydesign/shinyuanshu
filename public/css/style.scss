@@ -1274,6 +1274,7 @@ main {
       background-color: transparent;
       .title-ch {
         // display: inline-block;
+        width: 26px;
         h2 {
           font-size: 26px;
           letter-spacing: 0.37em;
@@ -1286,6 +1287,7 @@ main {
         }
       }
       &_subtitle {
+        width: 23px;
         // display: inline-block;
         > li {
           padding: 8px 0;
