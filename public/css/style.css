@@ -1321,9 +1321,11 @@ main {
   position: absolute;
   padding: 48px 44px;
   background-color: rgba(255, 255, 255, 0.7);
-  gap: 20px;
   top: 6.05vw;
   left: 20.84vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .upgrade_text .title-ch {
@@ -1349,7 +1351,7 @@ main {
 
 .upgrade_text .title-ch li {
   padding: 48px 0;
-  position: static;
+  position: relative;
 }
 
 .upgrade_text .title-ch li:first-child {
@@ -1364,8 +1366,10 @@ main {
   margin: 0 auto;
   -webkit-transform: none;
           transform: none;
-  position: static;
+  position: absolute;
   display: block;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .upgrade_text .title-ch li:last-child {
@@ -1420,11 +1424,18 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .upgrade_text_subtitle > li > ul > li {
   padding: 24px 0;
   position: relative;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
 }
 
 .upgrade_text_subtitle > li > ul > li::after {
@@ -1501,9 +1512,6 @@ main {
   .upgrade_text_subtitle > li > ul > li {
     padding: 8px 0;
     line-height: 1;
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
     width: 100%;
   }
   .upgrade_text_subtitle > li > ul > li::after {

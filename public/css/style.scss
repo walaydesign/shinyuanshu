@@ -1164,9 +1164,10 @@ main {
     position: absolute;
     padding: 48px 44px;
     background-color: rgba(255, 255, 255, 0.7);
-    gap: 20px;
+    // gap: 20px;
     top: 6.05vw;
     left: 20.84vw;
+    display: flex;
     .title-ch {
       flex-direction: column;
       display: inline-flex;
@@ -1179,7 +1180,7 @@ main {
       }
       li {
         padding: 48px 0;
-        position: static;
+        position: relative;
         &:first-child {
           padding-top: 0;
         }
@@ -1190,8 +1191,9 @@ main {
           right: inherit;
           margin: 0 auto;
           transform: none;
-          position: static;
+          position: absolute;
           display: block;
+          transform: translateX(-50%);
         }
         &:last-child {
           padding-bottom: 0;
@@ -1229,9 +1231,11 @@ main {
         }
         > ul {
           display: flex;
+          flex-direction: column;
           > li {
             padding: 24px 0;
             position: relative;
+              writing-mode: vertical-rl;
             &::after {
               position: absolute;
               content: "";
@@ -1271,9 +1275,7 @@ main {
       top: 9.17vw;
       left: 14.72vw;
       display: flex;
-      // background-color: transparent;
       .title-ch {
-        // display: inline-block;
         width: 26px;
         h2 {
           font-size: 26px;
@@ -1288,7 +1290,6 @@ main {
       }
       &_subtitle {
         width: 23px;
-        // display: inline-block;
         > li {
           padding: 8px 0;
           width: 100%;
@@ -1297,13 +1298,12 @@ main {
             height: 1px;
           }
           > ul {
-              display: block;
-          width: 100%;
+            display: block;
+            width: 100%;
             > li {
               padding: 8px 0;
               line-height: 1;
-        writing-mode: vertical-rl;
-          width: 100%;
+              width: 100%;
               &::after {
                 width: 3px;
                 height: 3px;
