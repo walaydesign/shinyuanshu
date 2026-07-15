@@ -2672,7 +2672,7 @@ main {
     padding: 0;
   }
   .sideBtn li {
-    width: 25%;
+    width: 20%;
   }
   .sideBtn li::after {
     display: none;
